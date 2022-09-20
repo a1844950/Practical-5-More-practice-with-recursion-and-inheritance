@@ -1,5 +1,5 @@
-#ifndef FILTERNONPOSITIVE_H
-#define FILTERNONPOSITIVE_H
+#ifndef FilterNonPositive_H
+#define FilterNonPositive_H
 
 #include <iostream>
 #include <vector>
@@ -13,4 +13,4 @@ private:
   bool g(int) final;
 };
 
-#endif 
+#endif //FilterNonPositive_H

@@ -1,17 +1,28 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+using namespace std;
+
 #include "MapGeneric.h"
 
-void MapGeneric::recursiveMap(
-  const std::vector<int>&list,
-  std::vector<int>&res){
-    return;
-  }
-  res.push_back(f(list.at(res.size())));
-  recursiveMap(list,res)l
-  }
 
-  std::vector<int> MapGeneric::map(std::vector<int>list){
-    std::vector<int>res:
-    recursiveMap(list,res);
-    return res;
-  }
-)
+void MapGeneric::recursiveMap
+(const vector<int> &a, vector<int> &b)
+{
+    //keep looping until
+    //the b is completely the same size as the
+    //a
+    if (b.size() == a.size()){return;}
+
+    b.push_back(f(a.at(b.size())));
+    recursiveMap(a, b);
+}
+
+vector<int> MapGeneric::map(vector<int> a)
+{
+    vector<int> b;
+    recursiveMap(a, b);
+    return b;
+}
+

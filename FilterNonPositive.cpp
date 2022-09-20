@@ -10,3 +10,4 @@ bool FilterNonPositive::g(int x)
 {
   return x <= 0;
 }
+

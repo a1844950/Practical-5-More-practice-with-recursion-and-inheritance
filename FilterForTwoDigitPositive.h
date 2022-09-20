@@ -1,4 +1,4 @@
-#ifndef FilterForTwoDigitPOsitive_H
+#ifndef FilterForTwoDigitPositive_H
 #define FilterForTwoDigitPositive_H
 
 #include <iostream>
@@ -12,4 +12,4 @@ class FilterForTwoDigitPositive: public FilterGeneric
   bool g(int) final;
 };
 
-#endif
+#endif //FilterForTwoDigitPositive_H

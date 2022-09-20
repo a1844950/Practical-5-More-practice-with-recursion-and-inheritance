@@ -6,8 +6,8 @@ using namespace std;
 
 #include "MapSquare.h"
 
-int x;
-int MapSquare::f(x)
+int MapSquare::f(int x)
 {
     return x*x;
 }
+

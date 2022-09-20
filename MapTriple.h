@@ -1,16 +1,16 @@
-#ifndef MAPTRIPLE_H
-#define MapTRIPLE_H
+#ifndef MapTriple_H
+#define MapTriple_H
 
 #include <iostream>
 #include <vector>
-#include "MapGeneric.h"
-
 using namespace std;
 
-class Maptriple : public MapGeneric
+#include "MapGeneric.h"
+
+class MapTriple : public MapGeneric
 {
-    private:
-    int x;
-    int f(x);
+private:
+    int f(int x);
 };
-#endif
+
+#endif //MapTriple_H

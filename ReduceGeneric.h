@@ -1,5 +1,5 @@
-#ifndef REDUCEGeneric_H
-#define REDUCEGeneric_H
+#ifndef ReduceGeneric_H
+#define ReduceGeneric_H
 
 #include <vector>
 using namespace std;
@@ -12,4 +12,4 @@ class ReduceGeneric {
   int reduce(vector<int>);
 };
 
-#endif
+#endif //ReduceGeneric_H

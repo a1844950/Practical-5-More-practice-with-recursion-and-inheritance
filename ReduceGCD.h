@@ -1,5 +1,5 @@
-#ifndef REDUCEGCD_H
-#define REDUCEGCD_H
+#ifndef ReduceGCD_H
+#define ReduceGCD_H
 
 #include "ReduceGeneric.h"
 
@@ -8,4 +8,4 @@ class ReduceGCD: public ReduceGeneric
   int binaryOperator(int, int) final;
 };
 
-#endif 
+#endif //ReduceGCD_H

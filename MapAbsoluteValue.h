@@ -1,5 +1,5 @@
-#ifndef MAPABSOLUTEVALUE_H
-#define MAPABSOLUTEVALUE_H
+#ifndef MapAbsoluteValue_H
+#define MapAbsoluteValue_H
 
 #include <iostream>
 #include <vector>
@@ -13,4 +13,4 @@ class MapAbsoluteValue: public MapGeneric
   int f(int) final;
 };
 
-#endif 
+#endif //MapAbsoluteValue_H

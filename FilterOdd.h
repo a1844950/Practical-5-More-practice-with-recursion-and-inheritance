@@ -1,13 +1,19 @@
-#ifndef FILTERODD_H
-#define FILTERODD_H
+#ifndef FilterOdd_H
+#define FilterOdd_H
 
 #include <iostream>
 #include <vector>
 using namespace std;
+
 #include "FilterGeneric.h"
 
-class FilterODd : public FilterGeneric{
-    bool g(int) final;
+
+
+#include "FilterGeneric.h"
+
+class FilterOdd: public FilterGeneric {
+  bool g(int) final;
 };
 
-#endif
+
+#endif //FilterOdd_H

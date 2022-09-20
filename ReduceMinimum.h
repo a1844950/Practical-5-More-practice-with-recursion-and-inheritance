@@ -1,5 +1,5 @@
-#ifndef REDUCEMINIMUM_H
-#define REDUCEMINIMUM_H
+#ifndef ReduceMinimum_H
+#define ReduceMinimum_H
 
 #include "ReduceGeneric.h"
 
@@ -7,4 +7,4 @@ class ReduceMinimum: public ReduceGeneric {
   int binaryOperator(int, int) final;
 };
 
-#endif 
+#endif //ReduceMinimum_H

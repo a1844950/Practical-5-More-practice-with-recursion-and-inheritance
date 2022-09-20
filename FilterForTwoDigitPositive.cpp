@@ -4,9 +4,10 @@
 #include <numeric>
 using namespace std;
 
-#include"FilterForTwoDigitPositive.h"
+#include "FilterForTwoDigitPositive.h"
 
 bool FilterForTwoDigitPositive::g(int x)
 {
-  return x > 0 && x / 10 < 10;
+  return x / 100 == 0 && x / 10 > 0;
 }
+

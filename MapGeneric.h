@@ -1,15 +1,17 @@
-#ifndef MAPGENERIC_H
-#define MAPGENERIC_H
+#ifndef MapGeneric_H
+#define MapGeneric_H
 
+#include <iostream>
 #include <vector>
+using namespace std;
 
-class MapGeneric{
-    virtual int f(int) = 0;
-    void recursiveMap(const std :: vector<int>&, std::vector<int>&);
-
-
-    public:
-    std::vector<int> map(std::vector<int>);
+class MapGeneric
+{
+private:
+    virtual int f(int)=0;
+    void recursiveMap(const vector<int>&, vector<int>&);
+public:
+    vector<int> map(vector<int>);
 };
 
-#endif 
+#endif //MapGeneric_H

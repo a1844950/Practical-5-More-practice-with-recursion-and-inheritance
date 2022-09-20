@@ -1,5 +1,5 @@
-#ifndef MAPSQUARE_H
-#define MAPSQUARE_H
+#ifndef MapSquare_H
+#define MapSquare_H
 
 #include <iostream>
 #include <vector>
