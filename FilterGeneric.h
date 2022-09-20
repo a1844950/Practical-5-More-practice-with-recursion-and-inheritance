@@ -1,15 +1,15 @@
-#ifndef FILTERGENERIC_H_
-#define FILTERGENERIC_H_
+#ifndef FILTERGENERIC_H
+#define FILTERGENERIC_H
 
+#include <iostream>
 #include <vector>
 using namespace std;
 
 class FilterGeneric {
-private:
-	virtual bool g(int) = 0;
-public:
-	vector<int> fillter(vector<int>);
+  virtual bool g(int) = 0;
+ 
+ public:
+  vector<int> filter(vector<int>);
 };
 
-
-#endif
+#endif 
