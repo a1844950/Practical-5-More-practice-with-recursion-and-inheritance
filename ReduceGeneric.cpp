@@ -1,18 +1,18 @@
 #include "ReduceGeneric.h"
 
 int ReduceGeneric::recursiveReduce(
-    size_t index,const std::vector<int>& list,int res)
+    size_t index,const std::vector<int>& a,int b)
     {
-        if (index == list.size())
+        if (index == a.size())
         {
-        return res;
+        return b;
         }
-  res = binaryOperator(res, list.at(index));
+  b = binaryOperator(b, a.at(index));
 
-  return recursiveReduce(++index, list, res);
+  return recursiveReduce(++index, a, b);
 }
 
-int ReduceGeneric::reduce(std::vector<int> list)
+int ReduceGeneric::reduce(std::vector<int> b)
 {
-  return recursiveReduce(1, list, list.front());
+  return recursiveReduce(1, b, list.front());
 }
