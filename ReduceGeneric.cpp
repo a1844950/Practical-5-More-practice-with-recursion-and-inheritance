@@ -12,7 +12,7 @@ int ReduceGeneric::recursiveReduce(
   return recursiveReduce(++index, a, b);
 }
 
-int ReduceGeneric::reduce(std::vector<int> b)
+int ReduceGeneric::reduce(std::vector<int> a)
 {
-  return recursiveReduce(1, b, list.front());
+  return recursiveReduce(1, a, a.front());
 }
