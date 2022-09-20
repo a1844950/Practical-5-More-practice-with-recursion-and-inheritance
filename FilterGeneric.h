@@ -1,5 +1,5 @@
-#ifndef FilterGeneric_H
-#define FilterGeneric_H
+#ifndef FILTERGENERIC_H
+#define FILTERGENERIC_H
 
 #include <iostream>
 #include <vector>
@@ -10,7 +10,7 @@ class FilterGeneric {
   void recursiveFilter(size_t, const vector<int>&, vector<int>&);
 
  public:
-  vector<int> filter(vector<int>);
+  std::vector<int> filter(std::vector<int>);
 };
 
-#endif //FilterGeneric_H#ifndef FilterGeneric_H
+#endif 
