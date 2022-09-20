@@ -1,5 +1,5 @@
-#ifndef MapSquare_H
-#define MapSquare_H
+#ifndef MAPSQUARE_H
+#define MAPSQUARE_H
 
 #include <iostream>
 #include <vector>
@@ -10,7 +10,8 @@ using namespace std;
 class MapSquare : public MapGeneric
 {
 private:
-    int f(int x);
+    int f(
+    int x);
 };
 
 #endif 
