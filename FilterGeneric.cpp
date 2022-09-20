@@ -1,16 +1,30 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+using namespace std;
+
 #include "FilterGeneric.h"
 
-vector<int> FilterGeneric::fillter(vector<int> arr)
-{
-	if (arr.size() == 0) {
-		return vector<int>();
-	}
-	int curr = arr[0]; 
-	arr.erase(arr.begin()); 
-	vector<int> res = fillter(arr);
-	if (g(curr)) {
-		res.insert(res.begin(),curr);
-	}
-	return res;
 
+void FilterGeneric::recursiveFilter
+(
+    size_t index,
+    const vector<int>& list,
+    vector<int>& res
+    ) 
+    {
+  if (index == list.size()) {
+    return;
+  }
+  if (g(list.at(index))) {
+    res.push_back(list.at(index));
+  }
+  recursiveFilter(++index, list, res);
+}
+
+vector<int> FilterGeneric::filter(vector<int> list) {
+  vector<int> res;
+  recursiveFilter(0, list, res);
+  return res;
 }
