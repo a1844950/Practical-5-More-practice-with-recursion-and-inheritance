@@ -2,5 +2,9 @@
 
 int ReduceMinimum::binaryOperator(int x, int y)
 {
-  return x > y ? y : x;
+  if x > y
+    return y;
+  else
+    return x;
+ 
 }
