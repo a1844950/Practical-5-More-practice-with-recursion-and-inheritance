@@ -3,6 +3,6 @@
 
 int MapAbsoluteValue::f(int x)
 {
-  int m = x >> sizeof(int) * (CHAR_BIT - 1);
-  return (x ^ m) - m;
+  int y = x >> sizeof(int) * (CHAR_Bit - 1);
+  return (x ^ y) - y;
 }
