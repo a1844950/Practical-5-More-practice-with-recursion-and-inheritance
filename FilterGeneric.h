@@ -1,16 +1,15 @@
-#ifndef FILTERGENERIC_H
-#define FILTERGENERIC_H
+#ifndef FILTERGENERIC_H_
+#define FILTERGENERIC_H_
 
-#include <iostream>
 #include <vector>
 using namespace std;
 
 class FilterGeneric {
-  virtual bool g(int) = 0;
-  void recursiveFilter(size_t, const vector<int>&, vector<int>&);
-
- public:
-  vector<int> filter(vector<int>);
+private:
+	virtual bool g(int) = 0;
+public:
+	vector<int> fillter(vector<int>);
 };
 
-#endif 
+
+#endif
