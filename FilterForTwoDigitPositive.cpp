@@ -8,6 +8,6 @@ using namespace std;
 
 bool FilterForTwoDigitPositive::g(int x)
 {
-  return x / 100 == 0 && x / 10 > 0;
+  return x / 100== 0 && x / 10 < 10;
 }
 
