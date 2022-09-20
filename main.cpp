@@ -13,20 +13,22 @@
 #include "ReduceGCD.h"
 #include "ReduceMinimum.h"
 
-void print(const std::vector<int> &list) {
-  for(const int &x: list) {
+using namespace std;
+
+void print(const vector<int> &a) {
+  for(const int &x: a) {
     std::cout << x << ' ';
   }
   std::cout << '\n';
 }
 
 int main() {
-  // Input
-  std::string str;
-  std::getline(std::cin, str);
-  std::stringstream ss(str);
+  
+  string str;
+  getline(std::cin, str);
+  stringstream ss(str);
 
-  std::vector<int> inputs;
+  vector<int> inputs;
   for (int i; ss >> i;) {
     inputs.push_back(i);
     while (ss.peek() == ',' || ss.peek() == ' ') {
@@ -41,7 +43,7 @@ int main() {
   ReduceMinimum reduce_minimum;
   ReduceGCD reduce_gcd;
 
-  std::vector<int> transformed_inputs =
+  vector<int> transformed_inputs =
     filter_for_two_digit_positive.filter(
       filter_odd.filter(
         map_triple.map(
