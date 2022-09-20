@@ -6,7 +6,8 @@ using namespace std;
 
 #include "MapTriple.h"
 
-int MapTriple::f(int x)
+int x;
+int MapTriple::f(x)
 {
     return 3*x;
 }
